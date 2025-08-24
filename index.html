@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code. Create. Collaborate. - Hackathon 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Hackathon</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-container" id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Code.</span>
+                <span class="title-line">Create.</span>
+                <span class="title-line">Collaborate.</span>
+            </h1>
+            <p class="hero-tagline" id="typed-text"></p>
+            <p class="hero-description">Join the most innovative hackathon of 2025. Build, learn, and connect with fellow developers.</p>
+            <button class="cta-button" onclick="scrollToSection('register')">
+                <span>Register Now</span>
+                <i class="fas fa-rocket"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2>Hackathon Starts In</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="milliseconds">000</div>
+                    <div class="countdown-label">Milliseconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Agenda Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About the Hackathon</h2>
+            <p class="about-description">
+                Experience three days of intense coding, innovation, and collaboration. Work with mentors, 
+                attend workshops, and bring your ideas to life in a supportive environment.
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-day">Day 1</div>
+                    <div class="timeline-content">
+                        <h3>Opening Ceremony + Workshops</h3>
+                        <p>Kick off with inspiring talks, team formation, and skill-building workshops.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-day">Day 2</div>
+                    <div class="timeline-content">
+                        <h3>Hacking + Mentorship</h3>
+                        <p>24 hours of intense coding with expert mentors and industry professionals.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-day">Day 3</div>
+                    <div class="timeline-content">
+                        <h3>Demos + Awards</h3>
+                        <p>Present your projects and compete for amazing prizes and recognition.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors-section">
+        <div class="container">
+            <h2>Our Sponsors</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-microsoft"></i>
+                        <span>Microsoft</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-amazon"></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-stripe"></i>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo">
+                        <i class="fab fa-slack"></i>
+                        <span>Slack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register-section">
+        <div class="container">
+            <h2>Register Now</h2>
+            <p class="register-description">Secure your spot in the most exciting hackathon of 2025!</p>
+            
+            <form class="registration-form" id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="teamSize">Team Size</label>
+                    <select id="teamSize" name="teamSize" required>
+                        <option value="">Select team size</option>
+                        <option value="1">Solo (1 person)</option>
+                        <option value="2">Duo (2 people)</option>
+                        <option value="3">Trio (3 people)</option>
+                        <option value="4">Quad (4 people)</option>
+                    </select>
+                    <div class="error-message" id="teamSize-error"></div>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <span>Register Now</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Code. Create. Collaborate.</h3>
+                    <p>Building the future, one hack at a time.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-globe"></i> www.abusha.tech </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code. Create. Collaborate. Hackathon. All rights reserved. Made with ❤️ by <a href="https://www.linkedin.com/in/abusha-ansari-a809b22b7/?originalSubdomain=in">Abusha Ansari</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Cursor Container -->
+    <div id="cursor-container"></div>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
